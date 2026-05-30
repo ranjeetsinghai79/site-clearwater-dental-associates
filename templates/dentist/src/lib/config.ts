@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "dentist",
-  name: "Bright Smile Dental",
-  tagline: "Gentle Care. Beautiful Results.",
-  phone: "(555) 345-6789",
-  phoneHref: "tel:+15553456789",
-  email: "hello@brightsmiledelta.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Lathrop", "Banta"],
-  license: "CA DDS #54321",
-  since: "2010",
-  google_rating: "4.9",
-  review_count: "418",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Clearwater Dental Associates",
+    tagline: "Your Smile, Our Priority. Today.",
+    phone: "(727) 555-0188",
+    phoneHref: "tel:+17275550188",
+    email: "info@clearwaterdental.com",
+    address: "123 Main St, Clearwater, FL 33756",
+    city: "Clearwater",
+    serviceAreas: ["Belleair", "Safety Harbor", "Largo", "Oldsmar", "Feather Sound"],
+    license: "FL Dental License #12345",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "noir",
+    niche: "dentist",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Teeth Whitening",
-    desc: "Professional Zoom whitening — up to 8 shades brighter in one visit. Take-home kits also available.",
-    urgent: false,
-  },
-  {
-    icon: "shield-check",
-    title: "Preventive Cleanings",
-    desc: "Comprehensive exams, digital X-rays, and thorough cleanings. Semi-annual visits for a lifetime of healthy teeth.",
-    urgent: false,
-  },
-  {
-    icon: "smile",
-    title: "Dental Implants",
-    desc: "Permanent tooth replacement that looks and feels natural. Single crowns to full arch restorations.",
-    urgent: false,
-  },
-  {
-    icon: "align-center",
-    title: "Invisalign & Braces",
-    desc: "Straighten your smile discreetly. Clear aligners for teens and adults. Free orthodontic consultation.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Emergency Dental",
-    desc: "Severe pain, broken tooth, lost crown? Same-day emergency slots reserved daily. Call us first.",
-    urgent: true,
-  },
-  {
-    icon: "star",
-    title: "Cosmetic Dentistry",
-    desc: "Veneers, bonding, gum contouring, and smile makeovers. Your dream smile is closer than you think.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "General Dentistry", desc: "Comprehensive care for your entire family's oral health needs.", urgent: false },
+    { icon: "sparkles", title: "Cosmetic Dentistry", desc: "Transform your smile with veneers, whitening, and clear aligners.", urgent: false },
+    { icon: "thermometer", title: "Dental Cleaning", desc: "Professional cleanings and exams for optimal oral hygiene.", urgent: false },
+    { icon: "shield-check", title: "Emergency Dentistry", desc: "Immediate care for unexpected dental pain or injuries.", urgent: true },
+    { icon: "wrench", title: "Dental Implants", desc: "Permanent solutions for missing teeth, restoring function and aesthetics.", urgent: false },
+    { icon: "heart", title: "Preventive Care", desc: "Proactive treatments to keep your teeth and gums healthy.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Jennifer P.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hadn't been to a dentist in 6 years due to anxiety. Dr. Kim was so patient and gentle. Now I actually look forward to my appointments.",
-  },
-  {
-    name: "Carlos R.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Got Invisalign here. The whole process was explained clearly, results were amazing. Staff made every visit easy and fun.",
-  },
-  {
-    name: "Melissa T.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Chipped a tooth Saturday morning. They got me in within 2 hours. Fixed it perfectly, matched my other teeth exactly. Incredible service.",
-  },
-],
+    { name: "Sarah L.", location: "Largo, FL", stars: 5, text: "I had a dental emergency last month and Clearwater Dental Associates got me in the same day. Dr. Smith was incredibly kind and fixed my chipped tooth quickly and painlessly. I'm so grateful for their prompt and professional service!" },
+    { name: "Mark T.", location: "Belleair, FL", stars: 5, text: "Getting my Invisalign here was a fantastic experience. The team explained everything clearly, and my teeth look amazing now. The payment plan was also very manageable. Highly recommend for anyone considering clear aligners!" },
+    { name: "Jessica R.", location: "Clearwater, FL", stars: 5, text: "My regular cleanings are always thorough and gentle. The hygienist is wonderful, and Dr. Jones always takes the time to answer all my questions. It's a truly welcoming and professional environment." }
+  ],
 
   trustBadges: [
-  "Accepting New Patients",
-  "Most Insurance Accepted",
-  "Anxiety-Free Dentistry",
-  "Digital X-Rays",
-  "Same-Day Emergencies",
-  "Family & Cosmetic Dentist",
-],
+    "ADA Member", "Same-Day Consultations", "Modern Technology", "Emergency Visits Available", "Invisalign Provider"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2090,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 16,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1500, label: "Happy Patients", suffix: "+", decimals: 0 },
+    { value: 18, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI receptionist books appointments, handles insurance questions, sends reminders — via call, SMS, or WhatsApp. Any hour, any day."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Appointments", desc: "We offer same-day consultations and emergency visits for your convenience." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear explanations of costs before any treatment begins." },
+    { icon: "award", title: "Experienced Dentists", desc: "Our team consists of highly qualified and compassionate dental professionals." },
+    { icon: "thumbs-up", title: "Patient Comfort", desc: "We prioritize your comfort with a gentle approach and modern amenities." },
+    { icon: "phone", title: "Easy Scheduling", desc: "Book your appointment online or by phone with our friendly staff." },
+    { icon: "sparkles", title: "Modern Technology", desc: "Utilizing the latest dental technology for precise and effective treatments." }
+  ],
 
-  formServiceOptions: [
-  "Teeth Whitening",
-  "Preventive Cleanings",
-  "Dental Implants",
-  "Invisalign & Braces",
-  "Emergency Dental",
-  "Cosmetic Dentistry"
-],
+  formServiceOptions: ["General Dentistry", "Cosmetic Dentistry", "Dental Cleaning", "Emergency Dentistry", "Dental Implants", "Preventive Care"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
